@@ -15,6 +15,10 @@ firstAndPike.averageCustomersPerHour ();
 
 var cookiesPerHour = firstAndPike.averageCookiesPerCustomer * firstAndPike.averageCustomersPerHour;
 
+firstAndPike.cookiesPerHour = [];
+
+console.log (firstAndPike);
+
 var seatacAirport = {
   minHourlyCustomers: 3,
   maxHourlyCustomers: 24,
@@ -26,7 +30,13 @@ var seatacAirport = {
 
 console.log ('Store data: ' + seatacAirport);
 
-seatacAirport.averageCustomersPerHour();
+seatacAirport.averageCustomersPerHour ();
+
+var cookiesPerHour = seatacAirport.averageCookiesPerCustomer * seatacAirport.averageCustomersPerHour;
+
+seatacAirport.cookiesPerHour = [];
+
+console.log (seatacAirport);
 
 var seattleCenter = {
   minHourlyCustomers: 11,
@@ -41,6 +51,12 @@ console.log ('Store data: ' + seattleCenter);
 
 seattleCenter.averageCustomersPerHour();
 
+var cookiesPerHour = seattleCenter.averageCookiesPerCustomer * seattleCenter.averageCustomersPerHour;
+
+seattleCenter.cookiesPerHour = [];
+
+console.log (seattleCenter);
+
 var capitolHill = {
   minHourlyCustomers: 20,
   maxHourlyCustomers: 38,
@@ -54,6 +70,12 @@ console.log ('Store data: ' + capitolHill);
 
 capitolHill.averageCustomersPerHour();
 
+var cookiesPerHour = capitolHill.averageCookiesPerCustomer * capitolHill.averageCustomersPerHour;
+
+capitolHill.cookiesPerHour = [];
+
+console.log (capitolHill);
+
 var alki = {
   minHourlyCustomers: 2,
   maxHourlyCustomers: 16,
@@ -66,3 +88,9 @@ var alki = {
 console.log ('Store data: ' + alki);
 
 alki.averageCustomersPerHour();
+
+var cookiesPerHour = alki.averageCookiesPerCustomer * alki.averageCustomersPerHour;
+
+alki.cookiesPerHour = [];
+
+console.log (alki);
