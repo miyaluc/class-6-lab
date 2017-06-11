@@ -56,6 +56,7 @@ function Store(storeLocation, minHourlyCustomers,maxHourlyCustomers, averageCook
   this.minHourlyCustomers = minHourlyCustomers;
   this.maxHourlyCustomers = maxHourlyCustomers;
   this.averageCookiesPerCustomer = averageCookiesPerCustomer;
+  this.hours = ['6:00 AM', '7:00 AM', '8:00 AM', '9:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '1:00 PM', '2:00 PM','3:00 PM', '4:00 PM', '5:00 PM', '6:00 PM', '7:00 PM', '8:00 PM'];
 }
 
 var firstAndPike = new Store('1st Ave and Pike St', 23, 65, 6.3);
@@ -66,16 +67,12 @@ var alki = new Store('Alki', 2, 16, 4.3);
 
 console.log(Store);
 
-//   averageCustomersPerHour: function(minHourlyCustomers, maxHourlyCustomers) {
-//     return Math.floor (Math.random() * ((this.maxHourlyCustomers + 1) - this.minHourlyCustomers)) + this.minHourlyCustomers;},
-//   hours: ['8:00 AM', '9:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '1:00 PM', '2:00 PM', '3:00 PM', '4:00 PM', '5:00 PM', '6:00 PM']
+function makeRow(Store) {
+  var newRowEl = document.createElement('tr');
+  for (var i = 0; i < Store.hours; i++) {
+  
+  {
 
-
-// firstAndPike.averageCustomersPerHour ();
-
-// var cookiesPerHour = firstAndPike.averageCookiesPerCustomer * firstAndPike.averageCustomersPerHour;
-//
-// firstAndPike.cookiesPerHour = [];
-
-
-var allStores = [firstAndPike, seattleCenter, seattleCenter, capitolHill, alki];
+  }
+}
+//var allStores = [firstAndPike, seattleCenter, seattleCenter, capitolHill, alki];

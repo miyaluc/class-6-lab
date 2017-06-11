@@ -1,0 +1,23 @@
+
+html {
+  background-color: #B49C9C;
+};
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hgroup {
+  margin-left: auto;
+  margin-right: auto;
+};
+
+body {
+  border-style: groove;
+  border-width: medium;
+}
+
+h1, h3 {
+  font-style: oblique;
+}
