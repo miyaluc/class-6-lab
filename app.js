@@ -30,11 +30,8 @@
 //
 // var listEl - document.createElement('ul');
 // sectionEl.appendChild(listEl);
-// for(var i = 0; i < store.hoursOpen.length; i++){
-// 	var listItemEl = document.creatElement('li');
-// listEl.appendChild(listeItelEl);
-// listeItemEl.textContent = store.hoursOpen[i] + ': ' +
-// store.cookiesPurchasedHour[i] + ' cookies';
+
+
 // ==================================================/
 var firstAndPike = new Store('1st Ave and Pike St', 23, 65, 6.3);
 var seatacAirport = new Store('SeaTac Airport', 3, 24, 1.2);
@@ -122,3 +119,25 @@ seatacAirport;
 seattleCenter;
 capitolHill;
 alki;
+
+
+//starting the event listener for form element
+
+var formEl = document.getElementById('form');
+
+formEl.addEventListener('submit', fishyCookiesSubmit);
+
+function fishyCookiesSubmit(event){
+  event.preventDefault();
+  console.log(event.target.newStoreLocation.value);
+
+  var newStoreLocation = event.target.newStoreLocation.value;
+  var newMinHourlyCustomers = event.target.newMinHourlyCustomers.value;
+  var newMaxHourlyCustomers = event.target.newMaxHourlyCustomers.value;
+  var newAverageCookiesPerCustomer = event.target.newAverageCookiesPerCustomer.value;
+
+  var newStore = new Store(newStoreLocation, newMinHourlyCustomers, newMaxHourlyCustomers, newAverageCookiesPerCustomer);
+
+  newStore.cookiesPerHourMethod();
+  newStore.makeRow();
+}
