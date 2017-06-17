@@ -1,46 +1,5 @@
 'use strict';
 
-//
-// javascript
-// -function cookietallyall() {
-// for (var
-//
-// to print sales to HTML, used function print
-//
-// in objecttotal cookies: 0
-// cookies purchasedperhour: []
-//
-// ================================================
-// function cookieTallyAll(){
-// 	for var i=0; i < allStores.length; i++){
-// 	  cookieTally(allStores[i]);
-//     }
-// }
-// ================================================
-//
-// function printSales(store) {
-// var sectionEl = document.createElement('section');
-// sectionEl.appendChild(headerEl);
-// headerEl.textContent= store.storeLocation;
-//
-// var headerEl = document.creatElement('h3');
-// sectionEL.appendChile(headerEl);
-// headerEl.textContent = store.storeLocation;
-// listItemEl
-//
-// var listEl - document.createElement('ul');
-// sectionEl.appendChild(listEl);
-<<<<<<< HEAD
-// for(var i = 0; i < store.hoursOpen.length; i++){
-// 	var listItemEl = document.creatElement('li');
-// listEl.appendChild(listeItelEl);
-// listeItemEl.textContent = store.hoursOpen[i] + ': ' +
-// store.cookiesPurchasedHour[i] + ' cookies';
-=======
-
-
->>>>>>> e2d300b163f03e968e0b81ba6047c5d9b8903471
-// ==================================================/
 var firstAndPike = new Store('1st Ave and Pike St', 23, 65, 6.3);
 var seatacAirport = new Store('SeaTac Airport', 3, 24, 1.2);
 var seattleCenter = new Store('Seattle Center', 11, 38, 3.7);
@@ -127,9 +86,6 @@ seatacAirport;
 seattleCenter;
 capitolHill;
 alki;
-<<<<<<< HEAD
-=======
-
 
 //starting the event listener for form element
 
@@ -151,4 +107,3 @@ function fishyCookiesSubmit(event){
   newStore.cookiesPerHourMethod();
   newStore.makeRow();
 }
->>>>>>> e2d300b163f03e968e0b81ba6047c5d9b8903471
