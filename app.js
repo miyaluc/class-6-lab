@@ -74,11 +74,40 @@ function totalCookies(store) {
   }
 }
 
-// var tableHeaderTotal = document.createElement('th');
-// tableHeaderTotal.textContent = 'Daily Total';
+var hourlyTotal = [];
+function hourlyTotals(store) {
+  for (var h = 0; h < hours.length; h++) {
+    var total = 0;
+    for (var s = 0; s < allStores.length; s++)
+      store.cookiesPerHour[h];
+    total += store.cookiesPerHour[h];
+    if (s = allStores.length - 1) {
+      hourlyTotal.push(total);
+      // console.log('This is the ' + hourlyTotal + '.');
+    }
+  }
+}
+
+var tfoot = document.createElement('tfoot');
+var hourlyTotalEl = document.createElement('tr');
+var totalCookiesPerHour = document.createElement('td');
+
+hourlyTotalEl.textContent = 'Hourly Total';
+hourlyTotalEl.appendChild(totalCookiesPerHour);
+tfoot.appendChild(hourlyTotalEl);
+
+for (var j = 0; j < allStores.length; j++) {
+  hourlyTotals(allStores[j]);
+}
+
+//look at makeRow function and use that for printing this data.
+
+tbody.appendChild(tfoot);
+
+//set one loop that goes per hour and set another array that goes per location
+
 //
-// tableHeaderRow.appendChild(tableHeaderTotal);
-// tableEl.appendChild(tableHeader);
+//
 
 //starting the event listener for form element
 
